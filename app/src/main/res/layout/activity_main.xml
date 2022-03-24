@@ -161,7 +161,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="112dp"
         android:layout_marginTop="35dp"
-        android:src="@drawable/cwa_mod_icon"
+        android:src="@drawable/cwa_mod_icon0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleBag" />
 
@@ -171,7 +171,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="375dp"
         android:layout_marginTop="35dp"
-        android:src="@drawable/tvoc_mod_icon"
+        android:src="@drawable/tvoc_mod_icon0"
         app:layout_constraintLeft_toRightOf="@+id/cwaModIcon"
         app:layout_constraintTop_toBottomOf="@+id/titleBag" />
 
@@ -182,7 +182,7 @@
         android:layout_marginStart="112dp"
         android:layout_marginTop="35dp"
         android:layout_marginEnd="112dp"
-        android:src="@drawable/smoke_mod_icon"
+        android:src="@drawable/smoke_mod_icon0"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleBag" />
 
@@ -554,7 +554,7 @@
             android:gravity="center"
             android:text="ST H"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <TextView
@@ -576,7 +576,7 @@
             android:gravity="center"
             android:text="ST H"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <TextView
@@ -598,7 +598,7 @@
             android:gravity="center"
             android:text="ST H"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <TextView
@@ -620,7 +620,7 @@
             android:gravity="center"
             android:text="ST H"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <TextView
@@ -736,7 +736,7 @@
             android:gravity="center"
             android:text="ST H"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <TextView
@@ -758,7 +758,7 @@
             android:gravity="center"
             android:text="ST H"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <TextView
@@ -780,7 +780,7 @@
             android:gravity="center"
             android:text="ST H"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <TextView
@@ -802,7 +802,7 @@
             android:gravity="center"
             android:text="ST H"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <TextView
@@ -918,7 +918,7 @@
             android:gravity="center"
             android:text="ST H"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <TextView
@@ -940,7 +940,7 @@
             android:gravity="center"
             android:text="ST H"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <TextView
@@ -962,7 +962,7 @@
             android:gravity="center"
             android:text="ST H"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <TextView
@@ -984,7 +984,7 @@
             android:gravity="center"
             android:text="ST H"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <TextView
@@ -1235,7 +1235,7 @@
             android:layout_marginTop="20dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <ImageView
@@ -1245,7 +1245,7 @@
             android:layout_marginTop="40dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <ImageView
@@ -1255,7 +1255,7 @@
             android:layout_marginTop="40dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <ImageView
@@ -1265,7 +1265,7 @@
             android:layout_marginTop="40dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <ImageView
@@ -1275,7 +1275,7 @@
             android:layout_marginTop="40dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <ImageView
@@ -1285,7 +1285,7 @@
             android:layout_marginTop="40dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <ImageView
@@ -1295,7 +1295,7 @@
             android:layout_marginTop="40dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
     </LinearLayout>
@@ -1315,7 +1315,7 @@
             android:layout_marginTop="20dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <ImageView
@@ -1325,7 +1325,7 @@
             android:layout_marginTop="40dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <ImageView
@@ -1335,7 +1335,7 @@
             android:layout_marginTop="40dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <ImageView
@@ -1345,7 +1345,7 @@
             android:layout_marginTop="40dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <ImageView
@@ -1355,7 +1355,7 @@
             android:layout_marginTop="40dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <ImageView
@@ -1365,7 +1365,7 @@
             android:layout_marginTop="40dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <ImageView
@@ -1375,7 +1375,7 @@
             android:layout_marginTop="40dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
     </LinearLayout>
@@ -1395,7 +1395,7 @@
             android:layout_marginTop="45dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <ImageView
@@ -1405,7 +1405,7 @@
             android:layout_marginTop="85dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <ImageView
@@ -1415,7 +1415,7 @@
             android:layout_marginTop="85dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <ImageView
@@ -1425,7 +1425,7 @@
             android:layout_marginTop="85dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -1444,7 +1444,7 @@
             android:layout_marginTop="45dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <ImageView
@@ -1454,7 +1454,7 @@
             android:layout_marginTop="85dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <ImageView
@@ -1464,7 +1464,7 @@
             android:layout_marginTop="85dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <ImageView
@@ -1474,7 +1474,7 @@
             android:layout_marginTop="85dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -1493,7 +1493,7 @@
             android:layout_marginTop="45dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <ImageView
@@ -1503,7 +1503,7 @@
             android:layout_marginTop="85dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <ImageView
@@ -1513,7 +1513,7 @@
             android:layout_marginTop="85dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
 
         <ImageView
@@ -1523,7 +1523,7 @@
             android:layout_marginTop="85dp"
             android:src="@drawable/alarm_icon"
             android:textColor="@color/white"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textSize="12sp" />
     </LinearLayout>
 
