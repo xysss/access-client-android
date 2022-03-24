@@ -67,7 +67,6 @@ public interface AlarmDef {
     String TYPE_GD606_CONT = "复合气体";
     String TYPE_EC_CONT = "电化学";
 
-
     // 报警模式：包括相对滑动、绝对、相对固定、动态基线、采用硬件的报警结果。
     int MODE_RELATIVE = 1;
     int MODE_ABSOLUTE = 2;
