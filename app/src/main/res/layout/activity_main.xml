@@ -1,0 +1,1530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D2025">
+
+    <ImageView
+        android:id="@+id/company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="34dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="56dp"
+        android:background="#3300EEFF"
+        android:gravity="center"
+        android:text="返回"
+        android:textColor="#CC00EEFF"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:text="现场执勤"
+        android:textColor="#00EEFF"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toLeftOf="@+id/backBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/voice"
+        app:layout_constraintRight_toLeftOf="@+id/name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/titleBag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/company" />
+
+    <TextView
+        android:id="@+id/HTId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="HT1234567890"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/company" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:text="温度：26"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@+id/HTId"
+        app:layout_constraintTop_toBottomOf="@+id/company" />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="10dp"
+        android:text="湿度：70%"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@+id/temperature"
+        app:layout_constraintTop_toBottomOf="@+id/company" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="FCBR-100M多功能有毒有害因子探测器"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/company" />
+
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:text="设置"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/company" />
+
+    <TextView
+        android:id="@+id/systemState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="34dp"
+        android:text="系统状态"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintRight_toLeftOf="@+id/setting"
+        app:layout_constraintTop_toBottomOf="@+id/company" />
+
+    <TextView
+        android:id="@+id/alarmRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="34dp"
+        android:text="报警记录"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintRight_toLeftOf="@+id/systemState"
+        app:layout_constraintTop_toBottomOf="@+id/company" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="27dp"
+        android:text="故障记录"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintRight_toLeftOf="@+id/alarmRecord"
+        app:layout_constraintTop_toBottomOf="@+id/company" />
+
+    <ImageView
+        android:id="@+id/cwaModIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/cwa_mod_icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleBag" />
+
+    <ImageView
+        android:id="@+id/tvocModIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="375dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/tvoc_mod_icon"
+        app:layout_constraintLeft_toRightOf="@+id/cwaModIcon"
+        app:layout_constraintTop_toBottomOf="@+id/titleBag" />
+
+    <ImageView
+        android:id="@+id/smokeModIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="112dp"
+        android:src="@drawable/smoke_mod_icon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleBag" />
+
+    <TextView
+        android:id="@+id/cwaModText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="22dp"
+        android:text="化学战剂"
+        android:textColor="#FF8F17"
+        android:textSize="23sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModIcon" />
+
+    <TextView
+        android:id="@+id/tvocModText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="有毒有害气体"
+        android:textColor="#FF8F17"
+        android:textSize="23sp"
+        app:layout_constraintLeft_toRightOf="@+id/cwaModText"
+        app:layout_constraintRight_toLeftOf="@+id/smokeModText"
+        app:layout_constraintTop_toBottomOf="@+id/tvocModIcon" />
+
+    <TextView
+        android:id="@+id/smokeModText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="91dp"
+        android:text="空气质量检测"
+        android:textColor="#00F28E"
+        android:textSize="23sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smokeModIcon" />
+
+    <LinearLayout
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/cwaValue1Text"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/color_CD6"
+            android:gravity="center"
+            android:text="路易氏气: 0.0"
+            android:textColor="@color/color_F17"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/cwaValue2Text"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/color_E2C"
+            android:gravity="center"
+            android:text="埃维克斯: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/cwaValue3Text"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/color_CD6"
+            android:gravity="center"
+            android:text="沙林: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/cwaValue4Text"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/color_E2C"
+            android:gravity="center"
+            android:text="梭曼: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/cwaValue5Text"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/color_CD6"
+            android:gravity="center"
+            android:text="芥子气: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/cwaValue6Text"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/color_E2C"
+            android:gravity="center"
+            android:text="氢氰酸: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/cwaValue7Text"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/color_CD6"
+            android:gravity="center"
+            android:text="光气: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="1dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/color_7B3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="1dp"
+        android:layout_height="421dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/color_7B3"
+        app:layout_constraintLeft_toLeftOf="@+id/view1"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText">
+
+        <TextView
+            android:id="@+id/cwaUnit1Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cwaUnit2Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cwaUnit3Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cwaUnit4Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cwaUnit5Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cwaUnit6Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cwaUnit7Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/tvocValue1Text"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:background="@color/color_CD6"
+            android:gravity="center"
+            android:text="硫化氢: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/tvocValue4Text"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:background="@color/color_E2C"
+            android:gravity="center"
+            android:text="一氧化碳: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/tvocValue7Text"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:background="@color/color_CD6"
+            android:gravity="center"
+            android:text="氯气: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/tvocValue10Text"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:background="@color/color_E2C"
+            android:gravity="center"
+            android:text="磷化氢: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="1dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/color_7B3"
+        app:layout_constraintLeft_toRightOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="1dp"
+        android:layout_height="421dp"
+        android:layout_marginStart="226dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/color_7B3"
+        app:layout_constraintLeft_toLeftOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintRight_toLeftOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText">
+
+        <TextView
+            android:id="@+id/tvocAlarmType1Text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/item_icon"
+            android:gravity="center"
+            android:text="ST H"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvocUnit1Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvocAlarmType4Text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/item_icon"
+            android:gravity="center"
+            android:text="ST H"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvocUnit4Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="63dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvocAlarmType7Text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/item_icon"
+            android:gravity="center"
+            android:text="ST H"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvocUnit7Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="66dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvocAlarmType10Text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/item_icon"
+            android:gravity="center"
+            android:text="ST H"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvocUnit10Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/tvocValue2Text"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:background="@color/color_CD6"
+            android:gravity="center"
+            android:text="臭氧: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/tvocValue5Text"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:background="@color/color_E2C"
+            android:gravity="center"
+            android:text="二氧化硫: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/tvocValue8Text"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:background="@color/color_CD6"
+            android:gravity="center"
+            android:text="氢气: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/tvocValue11Text"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:background="@color/color_E2C"
+            android:gravity="center"
+            android:text="氰化氢: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="1dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="226dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/color_7B3"
+        app:layout_constraintLeft_toLeftOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintRight_toLeftOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText">
+
+        <TextView
+            android:id="@+id/tvocAlarmType2Text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/item_icon"
+            android:gravity="center"
+            android:text="ST H"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvocUnit2Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvocAlarmType5Text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/item_icon"
+            android:gravity="center"
+            android:text="ST H"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvocUnit5Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="63dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvocAlarmType8Text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/item_icon"
+            android:gravity="center"
+            android:text="ST H"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvocUnit8Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="66dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvocAlarmType11Text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/item_icon"
+            android:gravity="center"
+            android:text="ST H"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvocUnit11Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/tvocValue3Text"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:background="@color/color_CD6"
+            android:gravity="center"
+            android:text="二氧化氮: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/tvocValue6Text"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:background="@color/color_E2C"
+            android:gravity="center"
+            android:text="氨气: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/tvocValue9Text"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:background="@color/color_CD6"
+            android:gravity="center"
+            android:text="氯化氢: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/tvocValue12Text"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:background="@color/color_E2C"
+            android:gravity="center"
+            android:text="一氧化氮: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="1dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="226dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/color_7B3"
+        app:layout_constraintLeft_toLeftOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintRight_toLeftOf="@+id/view6"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText">
+
+        <TextView
+            android:id="@+id/tvocAlarmType3Text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/item_icon"
+            android:gravity="center"
+            android:text="ST H"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvocUnit3Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvocAlarmType6Text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/item_icon"
+            android:gravity="center"
+            android:text="ST H"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvocUnit6Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="63dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvocAlarmType9Text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/item_icon"
+            android:gravity="center"
+            android:text="ST H"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvocUnit9Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="66dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvocAlarmType12Text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/item_icon"
+            android:gravity="center"
+            android:text="ST H"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvocUnit12Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="48dp"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/smokeValue1Text"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/color_CD6"
+            android:gravity="center"
+            android:text="烟气: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/smokeValue2Text"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/color_E2C"
+            android:gravity="center"
+            android:text="氧气: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/smokeValue3Text"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/color_CD6"
+            android:gravity="center"
+            android:text="甲醛: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/smokeValue4Text"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/color_E2C"
+            android:gravity="center"
+            android:text="TVOC: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/smokeValue5Text"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/color_CD6"
+            android:gravity="center"
+            android:text="苯系物: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/smokeValue6Text"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/color_E2C"
+            android:gravity="center"
+            android:text="二氧化碳: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+
+        <TextView
+            android:id="@+id/smokeValue7Text"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@color/color_E2C"
+            android:gravity="center"
+            android:text="甲烷: 0.0"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_7B3" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="1dp"
+        android:layout_height="427dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="272dp"
+        android:background="@color/color_7B3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="1dp"
+        android:layout_height="427dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="48dp"
+        android:background="@color/color_7B3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="57dp"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText">
+
+        <TextView
+            android:id="@+id/smokeUnit1Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/smokeUnit2Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/smokeUnit3Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/smokeUnit4Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/smokeUnit5Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/smokeUnit6Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/smokeUnit7Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:gravity="center"
+            android:text="ppb"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@+id/view1"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText">
+
+        <ImageView
+            android:id="@+id/cwaFault1Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/cwaFault2Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/cwaFault3Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/cwaFault4Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/cwaFault5Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/cwaFault6Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/cwaFault7Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText">
+
+        <ImageView
+            android:id="@+id/smokeFault1Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/smokeFault2Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/smokeFault3Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/smokeFault4Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/smokeFault5Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/smokeFault6Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/smokeFault7Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText">
+
+        <ImageView
+            android:id="@+id/tvocFault1Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/tvocFault4Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/tvocFault7Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/tvocFault10Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText">
+
+        <ImageView
+            android:id="@+id/tvocFault2Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/tvocFault5Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/tvocFault8Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/tvocFault11Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/cwaModText">
+
+        <ImageView
+            android:id="@+id/tvocFault3Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/tvocFault6Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/tvocFault9Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/tvocFault12Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:src="@drawable/alarm_icon"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
